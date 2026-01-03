@@ -140,21 +140,18 @@
     </div>
 
     <script>
-        // Auto-redirect based on browser language
-        function redirectToLanguage() {
+        // Auto-redirect based on browser language immediately
+        (function () {
             // Get browser language
             const userLang = navigator.language || navigator.userLanguage;
-            
+
             // Check if it's Turkish
             if (userLang.startsWith('tr')) {
-                window.location.href = 'tr/index.html';
+                window.location.replace('tr/index.html');
             } else {
-                window.location.href = 'en/index.html';
+                window.location.replace('en/index.html');
             }
-        }
-
-        // Redirect after a short delay to allow users to see the options
-        setTimeout(redirectToLanguage, 1500);
+        })();
     </script>
 </body>
 
