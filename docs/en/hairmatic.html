@@ -101,7 +101,6 @@
         .logo {
             width: 120px;
             height: 120px;
-            background: linear-gradient(135deg, #8b5cf6, #a78bfa);
             border-radius: 30px;
             display: flex;
             align-items: center;
@@ -109,6 +108,7 @@
             margin: 0 auto 28px;
             box-shadow: 0 20px 40px rgba(139, 92, 246, 0.4);
             animation: float 3s ease-in-out infinite;
+            overflow: hidden;
         }
 
         @keyframes float {
@@ -127,6 +127,13 @@
             width: 60px;
             height: 60px;
             fill: white;
+        }
+
+        .logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 30px;
         }
 
         h1 {
@@ -391,10 +398,7 @@
     <div class="container">
         <div class="hero">
             <div class="logo">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <path
-                        d="M12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2ZM21 9H15V22H13V16H11V22H9V9H3V7H21V9Z" />
-                </svg>
+                <img src="../logo.jpg" alt="Hairmatic Logo">
             </div>
             <h1>Hairmatic</h1>
             <p class="tagline">AI-Powered Hairstyle Design</p>
