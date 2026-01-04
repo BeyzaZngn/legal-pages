@@ -148,12 +148,21 @@
             margin-top: 0
         }
 
+        h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-top: 24px;
+            margin-bottom: 12px;
+            color: #c4b5fd
+        }
+
         p {
             color: rgba(255, 255, 255, 0.85);
             margin-bottom: 16px
         }
 
-        ul {
+        ul,
+        ol {
             margin-bottom: 16px;
             padding-left: 24px
         }
@@ -161,6 +170,28 @@
         li {
             color: rgba(255, 255, 255, 0.85);
             margin-bottom: 8px
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th {
+            background: rgba(139, 92, 246, 0.3);
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+            color: #fff;
+        }
+
+        td {
+            padding: 12px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
         }
 
         .highlight-box {
@@ -196,6 +227,16 @@
             font-size: 0.9rem
         }
 
+        hr {
+            border: none;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            margin: 32px 0;
+        }
+
+        strong {
+            color: #fff;
+        }
+
         @media(max-width:600px) {
             h1 {
                 font-size: 1.8rem
@@ -207,6 +248,15 @@
 
             .container {
                 padding: 24px 16px 40px
+            }
+
+            table {
+                font-size: 0.85rem;
+            }
+
+            th,
+            td {
+                padding: 8px;
             }
         }
     </style>
@@ -233,71 +283,318 @@
                 </svg>
             </div>
             <h1>Gizlilik Politikası</h1>
-            <p class="last-updated">Son güncelleme: 3 Ocak 2026</p>
+            <p class="last-updated">Son Güncelleme: 4 Ocak 2026</p>
         </div>
         <div class="content">
-            <h2>1. Giriş</h2>
-            <p>Hairmatic ("biz", "bizim" veya "uygulama") olarak, kullanıcılarımızın gizliliğine büyük önem veriyoruz.
-                Bu Gizlilik Politikası, uygulamamızı kullanırken kişisel verilerinizi nasıl topladığımızı,
-                kullandığımızı, sakladığımızı ve koruduğumuzu açıklamaktadır.</p>
-            <h2>2. Topladığımız Bilgiler</h2>
-            <p>Uygulamamızı kullanırken aşağıdaki bilgileri toplayabiliriz:</p>
+            <p>Beyza Zengin ("biz", "bize" veya "bizim") Hairmatic mobil uygulamasını ("Uygulama") işletmektedir. Bu
+                Gizlilik Politikası, Uygulamamızı kullandığınızda bilgilerinizi nasıl topladığımızı kullandığımızı,
+                açıkladığımızı ve koruduğumuzu açıklar.</p>
+
+            <p>Hairmatic'i kullanarak, bilgilerinizin bu Gizlilik Politikası'na uygun olarak toplanmasını ve
+                kullanılmasını kabul etmiş olursunuz. Bu Gizlilik Politikası'nın şartlarını kabul etmiyorsanız, lütfen
+                Uygulamayı kullanmayın.</p>
+
+            <hr>
+
+            <h2>1. Topladığımız Bilgiler</h2>
+
+            <h3>1.1 Sizin Sağladığınız Bilgiler</h3>
+
+            <p><strong>Fotoğraflar ve Görseller</strong></p>
+
+            <p>AI saç stili oluşturma özelliğimizi kullandığınızda, kameranızdan veya fotoğraf galerinizden fotoğraf
+                sağlarsınız. Bu fotoğraflar:</p>
+
             <ul>
-                <li><strong>Fotoğraflar:</strong> Saç stili denemesi için yüklediğiniz fotoğraflar</li>
-                <li><strong>Cihaz Bilgileri:</strong> Cihaz modeli, işletim sistemi versiyonu</li>
-                <li><strong>Kullanım Verileri:</strong> Uygulama içi etkileşimler ve tercihler</li>
-                <li><strong>Analitik Veriler:</strong> Uygulama performansı ve kullanım istatistikleri</li>
+                <li>Google'ın Gemini AI API'si kullanılarak gerçek zamanlı olarak işlenir</li>
+                <li>Stilize edilmiş görsellerinizi oluşturmak için base64 kodlaması ile güvenli bir şekilde iletilir
+                </li>
+                <li><strong>Sunucularımızda SAKLANMAZ</strong> — fotoğraflarınızı saklamıyor, kaydetmiyor veya bunlara
+                    erişimimiz bulunmuyor</li>
+                <li><strong>Ürünlerimizi geliştirmek için KULLANILMAZ</strong> — Google'ın Ücretli Seviye API'si
+                    verilerinizi ürün geliştirme için kullanmaz (Google API Şartları uyarınca)</li>
             </ul>
-            <div class="highlight-box">
-                <p><strong>Önemli:</strong> Yüklediğiniz fotoğraflar yalnızca AI saç stili işleme için kullanılır ve
-                    işlem tamamlandıktan sonra sunucularımızdan silinir.</p>
-            </div>
-            <h2>3. Bilgilerin Kullanımı</h2>
-            <p>Topladığımız bilgileri aşağıdaki amaçlarla kullanırız:</p>
+
+            <p>AI tarafından oluşturulan saç stili görselleri <strong>yalnızca cihazınızda</strong> Uygulama'nın yerel
+                galerisinde saklanır.</p>
+
+            <h3>1.2 Otomatik Olarak Toplanan Bilgiler</h3>
+
+            <p><strong>Analitik Veriler</strong></p>
+
+            <p>Uygulamamızı geliştirmek için anonim kullanım verileri toplamak amacıyla Firebase Analytics kullanıyoruz.
+                Bu veriler şunları içerebilir:</p>
+
             <ul>
-                <li>AI destekli saç stili önerileri ve dönüşümleri sağlamak</li>
-                <li>Uygulama deneyimini kişiselleştirmek ve geliştirmek</li>
-                <li>Teknik sorunları tespit etmek ve gidermek</li>
-                <li>Kullanıcı desteği sağlamak</li>
-                <li>Yasal yükümlülüklerimizi yerine getirmek</li>
+                <li>Cihaz türü ve işletim sistemi sürümü</li>
+                <li>Uygulama kullanım kalıpları ve özellik etkileşimleri</li>
+                <li>Çökme raporları ve performans verileri</li>
+                <li>Oturum süresi ve sıklığı</li>
             </ul>
-            <h2>4. Bilgi Paylaşımı</h2>
-            <p>Kişisel bilgilerinizi aşağıdaki durumlar dışında üçüncü taraflarla paylaşmayız:</p>
+
+            <p>Bu veriler toplu halde toplanır ve sizi kişisel olarak tanımlamaz.</p>
+
+            <p><strong>Satın Alma Bilgileri</strong></p>
+
+            <p>Uygulama içi satın alma yaptığınızda, abonelikleri ve kredileri yönetmek için RevenueCat kullanıyoruz.
+                RevenueCat şunları toplayabilir:</p>
+
             <ul>
-                <li><strong>Hizmet Sağlayıcılar:</strong> AI işleme ve bulut depolama hizmetleri için güvenilir
-                    ortaklarımız</li>
-                <li><strong>Yasal Gereklilikler:</strong> Yasal süreçlere uyum sağlamak için gerekli olduğunda</li>
-                <li><strong>İzninizle:</strong> Açık onayınızı aldığımız diğer durumlar</li>
+                <li>Anonim kullanıcı tanımlayıcıları</li>
+                <li>Satın alma geçmişi ve abonelik durumu</li>
+                <li>Apple tarafından işlenen işlem verileri</li>
             </ul>
-            <h2>5. Veri Güvenliği</h2>
-            <p>Verilerinizin güvenliğini sağlamak için endüstri standardı güvenlik önlemleri uyguluyoruz:</p>
+
+            <p>Tüm ödemeler Apple tarafından güvenli bir şekilde işlendiğinden, ödeme ayrıntılarınıza (kredi kartı
+                numaraları, fatura adresi vb.) erişimimiz yoktur.</p>
+
+            <h3>1.3 Cihaz İzinleri</h3>
+
+            <p>Uygulama aşağıdaki erişimleri gerektirir:</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>İzin</th>
+                        <th>Amaç</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Kamera</strong></td>
+                        <td>Saç stili oluşturma için fotoğraf çekmek</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Fotoğraf Galerisi</strong></td>
+                        <td>Mevcut fotoğrafları seçmek ve oluşturulan görselleri kaydetmek</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p>Bu izinleri istediğiniz zaman cihaz ayarlarınızdan iptal edebilirsiniz.</p>
+
+            <h3>1.4 Yerel Depolama</h3>
+
+            <p>Cihazınızda yerel olarak sınırıl veriler saklarız:</p>
+
             <ul>
-                <li>SSL/TLS şifreleme ile güvenli veri iletimi</li>
-                <li>Şifreli veri depolama</li>
-                <li>Düzenli güvenlik denetimleri</li>
-                <li>Sınırlı personel erişimi</li>
+                <li><strong>Keychain</strong>: Ücretsiz deneme kullanımını takip etmek için (yeniden yüklemeler arasında
+                    kalıcıdır)</li>
+                <li><strong>UserDefaults</strong>: Tanıtım tamamlanma durumunu takip etmek için</li>
+                <li><strong>Uygulama Depolama</strong>: Oluşturulan saç stili görsellerinizi kaydetmek için</li>
             </ul>
-            <h2>6. Veri Saklama</h2>
-            <p>Kişisel verilerinizi yalnızca gerekli olduğu süre boyunca saklarız. İşlenmiş fotoğraflar, AI işlemi
-                tamamlandıktan sonra 24 saat içinde sunucularımızdan otomatik olarak silinir.</p>
-            <h2>7. Kullanıcı Hakları</h2>
-            <p>Kişisel verilerinizle ilgili aşağıdaki haklara sahipsiniz:</p>
+
+            <hr>
+
+            <h2>2. Bilgilerinizi Nasıl Kullanıyoruz</h2>
+
+            <p>Toplanan bilgileri şu amaçlarla kullanıyoruz:</p>
+
             <ul>
-                <li>Verilerinize erişim talep etme</li>
-                <li>Verilerinizin düzeltilmesini isteme</li>
-                <li>Verilerinizin silinmesini talep etme</li>
-                <li>Veri işlemeye itiraz etme</li>
-                <li>Veri taşınabilirliği talep etme</li>
+                <li>Uygulamanın işlevselliğini sağlamak ve sürdürmek</li>
+                <li>Saç stili görselleri oluşturmak için fotoğraflarınızı AI ile işlemek</li>
+                <li>Aboneliğinizi ve kredi bakiyenizi yönetmek</li>
+                <li>Kullanıcı deneyimini geliştirmek için Uygulama kullanımını analiz etmek</li>
+                <li>Müşteri desteği sağlamak</li>
+                <li>Yasal yükümlülüklere uymak</li>
             </ul>
-            <h2>8. Çocukların Gizliliği</h2>
-            <p>Uygulamamız 13 yaşın altındaki çocuklara yönelik değildir. Bilerek 13 yaşın altındaki çocuklardan kişisel
-                bilgi toplamıyoruz.</p>
-            <h2>9. Politika Değişiklikleri</h2>
-            <p>Bu Gizlilik Politikası'nı zaman zaman güncelleyebiliriz. Önemli değişiklikler yapıldığında, uygulama içi
-                bildirim veya e-posta yoluyla sizi bilgilendireceğiz.</p>
-            <h2>10. İletişim</h2>
-            <p>Gizlilik politikamızla ilgili sorularınız için: <a
-                    href="mailto:hairmatic@aliosmanozturk.me">hairmatic@aliosmanozturk.me</a></p>
+
+            <hr>
+
+            <h2>3. Veri Paylaşımı ve Açıklama</h2>
+
+            <h3>3.1 Üçüncü Taraf Hizmet Sağlayıcıları</h3>
+
+            <p>Uygulamamızın işletilmesine yardımcı olan aşağıdaki hizmet sağlayıcılarla veri paylaşıyoruz:</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Hizmet</th>
+                        <th>Amaç</th>
+                        <th>Paylaşılan Veri</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Google Gemini AI</strong></td>
+                        <td>AI görsel oluşturma</td>
+                        <td>Base64 kodlu fotoğraflar (yalnızca işleme için geçici)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Firebase Analytics</strong></td>
+                        <td>Kullanım analitiği</td>
+                        <td>Anonim kullanım verileri</td>
+                    </tr>
+                    <tr>
+                        <td><strong>RevenueCat</strong></td>
+                        <td>Abonelik yönetimi</td>
+                        <td>Anonim kullanıcı kimliği, satın alma verileri</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Apple App Store</strong></td>
+                        <td>Ödeme işleme</td>
+                        <td>İşlem verileri (Apple tarafından yönetilir)</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>3.2 Yasal Gereksinimler</h3>
+
+            <p>Yasaların gerektirmesi veya kamu otoritelerinin geçerli yasal talepleri durumunda bilgilerinizi
+                açıklayabiliriz.</p>
+
+            <h3>3.3 İş Transferleri</h3>
+
+            <p>Birleşme, devralma veya varlık satışı durumunda bilgileriniz devralan kuruluşa aktarılabilir.</p>
+
+            <hr>
+
+            <h2>4. Veri Güvenliği</h2>
+
+            <p>Bilgilerinizi korumak için uygun teknik ve organizasyonel önlemler uyguluyoruz:</p>
+
+            <ul>
+                <li>Üçüncü taraf API'lere iletilen tüm veriler güvenli HTTPS bağlantıları kullanır</li>
+                <li>Fotoğraflar herhangi bir harici sunucuda saklanmaz</li>
+                <li>Ödeme işlemleri tamamen Apple'ın güvenli altyapısı tarafından yönetilir</li>
+            </ul>
+
+            <p>Ancak, İnternet üzerinden hiçbir iletim yöntemi %100 güvenli değildir ve mutlak güvenliği garanti
+                edemeyiz.</p>
+
+            <hr>
+
+            <h2>5. Veri Saklama</h2>
+
+            <ul>
+                <li><strong>Fotoğraflar</strong>: Saklanmaz — gerçek zamanlı işlenir ve AI oluşturma işleminden hemen
+                    sonra silinir</li>
+                <li><strong>Oluşturulan Görseller</strong>: Sadece cihazınızda saklanır, siz silinceye kadar kalır</li>
+                <li><strong>Analitik Veriler</strong>: Firebase'in standart saklama politikalarına göre saklanır</li>
+                <li><strong>Satın Alma Verileri</strong>: Abonelik yönetimi ve yasal uyumluluk için gerektiği sürece
+                    saklanır</li>
+            </ul>
+
+            <hr>
+
+            <h2>6. Haklarınız ve Seçenekleriniz</h2>
+
+            <h3>6.1 Erişim ve Kontrol</h3>
+
+            <p>Yapabilecekleriniz:</p>
+
+            <ul>
+                <li>Oluşturulan görselleri Uygulamanın galerisinden istediğiniz zaman silebilirsiniz</li>
+                <li>Kamera ve fotoğraf galerisi izinlerini cihaz ayarlarınızdan iptal edebilirsiniz</li>
+                <li>Bizimle iletişime geçerek analitik verilerinizin silinmesini talep edebilirsiniz</li>
+            </ul>
+
+            <h3>6.2 GDPR Hakları (Avrupa Ekonomik Alanı)</h3>
+
+            <p>AEA'da bulunuyorsanız, aşağıdaki haklara sahipsiniz:</p>
+
+            <ul>
+                <li>Kişisel verilerinize erişim</li>
+                <li>Hatalı kişisel verilerin düzeltilmesi</li>
+                <li>Kişisel verilerinizin silinmesini talep etme</li>
+                <li>Kişisel verilerinizin işlenmesine itiraz etme</li>
+                <li>Veri taşınabilirliği</li>
+                <li>İstediğiniz zaman rızanızı geri çekme</li>
+            </ul>
+
+            <h3>6.3 CCPA Hakları (Kaliforniya Sakinleri)</h3>
+
+            <p>Kaliforniya'da ikamet ediyorsanız, aşağıdaki haklara sahipsiniz:</p>
+
+            <ul>
+                <li>Hangi kişisel bilgilerin toplandığını bilme</li>
+                <li>Kişisel bilgilerin satılıp satılmadığını veya açıklanıp açıklanmadığını bilme</li>
+                <li>Kişisel bilgilerin satışından vazgeçme (Not: Kişisel bilgi satmıyoruz)</li>
+                <li>Kişisel bilgilerinize erişme</li>
+                <li>Kişisel bilgilerinizin silinmesini talep etme</li>
+                <li>Haklarınızı kullandığınız için ayrımcılığa tabi tutulmama</li>
+            </ul>
+
+            <h3>6.4 CalOPPA Uyumluluğu</h3>
+
+            <p>CalOPPA uyarınca, şunları kabul ediyoruz:</p>
+
+            <ul>
+                <li>Kullanıcıların Uygulamamızı anonim olarak ziyaret etmesine izin verme</li>
+                <li>App Store listelemizde bu Gizlilik Politikasına bir bağlantı ekleme</li>
+                <li>Gizlilik Politikası değişikliklerini Uygulama veya App Store aracılığıyla kullanıcılara bildirme
+                </li>
+            </ul>
+
+            <hr>
+
+            <h2>7. Çocukların Gizliliği</h2>
+
+            <p>Hairmatic, App Store'da 4+ olarak derecelendirilmiştir ve genel izleyici kitlesine yöneliktir. 13 yaşın
+                altındaki çocuklardan bilerek kişisel bilgi toplamıyoruz.</p>
+
+            <p>Ebeveyn veya vasi iseniz ve çocuğunuzun bize kişisel bilgi sağladığını düşünüyorsanız, lütfen bizimle
+                iletişime geçin. 13 yaşın altındaki bir çocuktan kişisel bilgi topladığımızı fark edersek, bu bilgileri
+                silmek için adımlar atacağız.</p>
+
+            <hr>
+
+            <h2>8. Uluslararası Veri Transferleri</h2>
+
+            <p>Bilgileriniz, ikamet ettiğiniz ülke dışındaki ülkelere, özellikle Amerika Birleşik Devletleri'ne (Google
+                ve Firebase'in faaliyet gösterdiği yer) aktarılabilir ve buralarda işlenebilir. Bu ülkelerin farklı veri
+                koruma yasaları olabilir.</p>
+
+            <p>Uygulamayı kullanarak, bilgilerinizin bu ülkelere aktarılmasına rıza göstermiş olursunuz. Bu Gizlilik
+                Politikası uyarınca verilerinizi korumak için uygun güvencelerin sağlandığından emin oluyoruz.</p>
+
+            <hr>
+
+            <h2>9. Bu Gizlilik Politikasındaki Değişiklikler</h2>
+
+            <p>Bu Gizlilik Politikasını zaman zaman güncelleyebiliriz. Değişiklikleri size şu şekillerde bildireceğiz:
+            </p>
+
+            <ul>
+                <li>Bu Gizlilik Politikasının başındaki "Son Güncelleme" tarihini güncelleyerek</li>
+                <li>Önemli değişiklikler için Uygulama içinde bir bildirim yayınlayarak</li>
+            </ul>
+
+            <p>Bu Gizlilik Politikasını düzenli olarak gözden geçirmenizi öneririz.</p>
+
+            <hr>
+
+            <h2>10. Bize Ulaşın</h2>
+
+            <p>Bu Gizlilik Politikası veya veri uygulamalarımız hakkında herhangi bir sorunuz veya endişeniz varsa,
+                lütfen bizimle iletişime geçin:</p>
+
+            <p><strong>E-posta</strong>: <a href="mailto:hairmatic@aliosmanozturk.me">hairmatic@aliosmanozturk.me</a>
+            </p>
+
+            <hr>
+
+            <h2>11. Ek Açıklamalar</h2>
+
+            <h3>Apple App Store</h3>
+
+            <p>Bu Uygulama, Apple App Store aracılığıyla dağıtılmaktadır. Apple'ın Gizlilik Politikası, App Store
+                aracılığıyla toplanan belirli veriler için de geçerlidir. Lütfen Apple'ın Gizlilik Politikasını <a
+                    href="https://www.apple.com/legal/privacy/" target="_blank">https://www.apple.com/legal/privacy/</a>
+                adresinden inceleyin.</p>
+
+            <h3>Google Hizmetleri</h3>
+
+            <p>Google'ın Gemini AI API'sini ve Firebase hizmetlerini kullanıyoruz. Google'ın Gizlilik Politikası, bu
+                hizmetler tarafından işlenen veriler için geçerlidir. Lütfen Google'ın Gizlilik Politikasını <a
+                    href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a>
+                adresinden inceleyin.</p>
+
+            <hr>
+
+            <p style="text-align: center; font-style: italic; color: rgba(255, 255, 255, 0.5);">Bu Gizlilik Politikası 4
+                Ocak 2026 tarihinden itibaren geçerlidir.</p>
         </div>
         <div class="footer">
             <p>© 2026 Hairmatic. Tüm hakları saklıdır.</p>
